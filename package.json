@@ -1,6 +1,6 @@
 {
   "name": "webpack-dynamic-public-path",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Webpack dynamic public path plugin.",
   "main": "./src/index.js",
   "scripts": {

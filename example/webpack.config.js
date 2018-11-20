@@ -5,10 +5,13 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const WebpackDynamicPublicPath = require('../src');
 
 module.exports = {
-    entry: path.resolve(__dirname, 'src'),
+    entry: {
+        'index': path.resolve(__dirname, 'src', 'index.js'),
+        'second-chunk': path.resolve(__dirname, 'src', 'second-chunk.js')
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
         publicPath: 'publicPathPlaceholder'
     },
     module: {
@@ -47,7 +50,12 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin('dist'),
         new WebpackDynamicPublicPath({
-            externalPublicPath: 'window.externalPublicPath'
+            externalPublicPath: 'window.externalPublicPath',
+            chunkNames: ['index']
+        }),
+        new WebpackDynamicPublicPath({
+            externalPublicPath: '"./"',
+            chunkNames: ['second-chunk']
         })
     ]
 };

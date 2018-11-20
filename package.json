@@ -1,15 +1,22 @@
 {
   "name": "webpack-dynamic-public-path",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Webpack dynamic public path plugin.",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./node_modules/webpack/bin/webpack --config example/webpack.config.js --display-modules --verbose"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Alexandr Zahorovskyi <zahorovskiy.a.a@gmail.com> (https://github.com/zahorovskyi)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zahorovskyi/webpack-dynamic-public-path/issues"
+  },
+  "homepage": "https://github.com/zahorovskyi/webpack-dynamic-public-path",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zahorovskyi/webpack-dynamic-public-path.git"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
@@ -18,5 +25,10 @@
     "clean-webpack-plugin": "^1.0.0",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
-  }
+  },
+  "keywords": [
+    "webpack",
+    "publicPath",
+    "dynamic publicPath"
+  ]
 }

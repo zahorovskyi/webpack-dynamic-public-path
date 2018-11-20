@@ -6,7 +6,7 @@ const WebpackDynamicPublicPath = require('../src');
 
 module.exports = {
     entry: {
-        index: path.resolve(__dirname, 'src', 'index.js'),
+        'index': path.resolve(__dirname, 'src', 'index.js'),
         'second-chunk': path.resolve(__dirname, 'src', 'second-chunk.js')
     },
     output: {
@@ -52,6 +52,10 @@ module.exports = {
         new WebpackDynamicPublicPath({
             externalPublicPath: 'window.externalPublicPath',
             chunkNames: ['index']
+        }),
+        new WebpackDynamicPublicPath({
+            externalPublicPath: '"./"',
+            chunkNames: ['second-chunk']
         })
     ]
 };

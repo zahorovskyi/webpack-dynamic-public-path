@@ -1,1 +1,0 @@
-{"version":3,"file":"0.bundle.js","sources":["webpack:///./src/test.js"],"sourcesContent":["const testMessage = 'test';\n\nexport default testMessage;"],"mappings":";;;;;;;;;;AAAA;AAAA;AAEA;;;;A","sourceRoot":""}

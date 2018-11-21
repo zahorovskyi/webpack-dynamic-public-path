@@ -3,6 +3,12 @@
   <p>Replace publicPath inside a chunk, or chunks, to a variable.</p>
 </div>
 
+[![NPM version](https://badge.fury.io/js/webpack-dynamic-public-path.svg)](https://nodei.co/npm/webpack-dynamic-public-path/)
+[![dependencies Status](https://david-dm.org/zahorovskyi/webpack-dynamic-public-path/status.svg)](https://david-dm.org/zahorovskyi/webpack-dynamic-public-path)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/zahorovskyi/webpack-dynamic-public-path/issues)
+
+[![NPM](https://nodei.co/npm/webpack-dynamic-public-path.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/webpack-dynamic-public-path/)
+
 <h2 align="center">Install</h2>
 
 ```bash

@@ -44,7 +44,7 @@ class WebpackDynamicPublicPath {
 
         const fileNames = chunks.map(
             chunk => chunk.files.find(
-                file => file.match(/.*\.js$/)
+                file => file.match(/.*\.js/)
             )
         );
 
